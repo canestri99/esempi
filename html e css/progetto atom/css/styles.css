@@ -1,0 +1,11 @@
+body {
+  color: #0000ff; /*dark grey*/
+  background-color: #EEEEEE; /*light grey*/
+  text-align: right;
+H1{
+  font-size: 60px;
+ol{
+  list-style-type: circle;
+p {
+
+}
