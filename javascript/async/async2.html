@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            
+                padding: 20px;
+                background-color: rgb(34, 34, 34);
+                color: white;
+                border: 5px solid rgb(12, 12, 12);
+                border-radius: 10px;
+                cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+   <button>Vai</button>
+   
+   <!-- <script>
+    const btn = document.querySelector('button');
+    btn.addEventListener('click', () => {
+    alert('mi hai cliccato');
+
+    let pElem = document.createElement('p');
+    pElem.textContent = 'questo e un paragrafo aggiunto.';
+    document.body.appendChild(pElem);
+    });
+
+   </script> -->
+   <!-- <script>
+    let response = fetch('https://www.psicosocial.it/wp-content/uploads/2020/10/immagine-fissa-si-muove.jpg');
+    console.log(response); 
+    let blob = response.blob();
+   </script> -->
+   <!-- <script>
+    function loadAsset(url, type, callback) {
+        let xhr = new XMLHttpRequest();
+        xhr.open('GET', url);
+        xhr.responseType = type;
+    
+        xhr.onload = function () {
+            callback(xhr.response);
+        };
+
+        xhr.send();
+    }
+     
+    function displayImage(blob) {
+        let object = URL.createObjectURL(blob);
+
+        let image = document.createElement('img');
+        image.src = objectURL;
+        document.body.appendChild(image);
+    }
+
+    loadAsset('https://ak.picdn.net/shutterstock/videos/11773709/thumb/10.jpg', 'blob', displayImage);
+
+   </script> -->
+<script>
+   fetch('classe.json').then(function (response) {
+    return response.json();
+   }).then(function (json) {
+    classe = json;
+    console.log('Dati:  ', classe)
+   }).catch(function (err) {
+      console.log('fetch problem: ' + err.message);
+   });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input{
+            display:block;
+            margin-bottom: 20px;
+        }
+       button{
+         padding: 20px;
+         background-color: rgb(34, 34, 34);
+         color: white;
+         border: 5px solid rgb(12, 12, 12);
+         border-radius: 10px;
+         cursor: pointer;
+       }
+    </style>
+</head>
+
+<body>
+    
+    <input type="text" name="numero" placeholder="inserisci un numero">
+    <button>calcolo cubo</button>
+    <h1></h1>
+
+    <script>
+
+let button = document.querySelector('button');
+let title = document.querySelector('h1');
+let numero = document.querySelector('input');
+
+function cubo(number){
+let result = number * number * number;
+console.log(result);
+return result;
+
+}
+
+button.addEventListener('click', ()=>{
+   
+    title.innerHTML = cubo(numero.value);
+});
+    </script>
+</body>
+</html>

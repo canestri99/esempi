@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const persona = {
+           nome : 'luca',
+           cognome: 'rossi',
+           genere : 'maschio',
+           interessi: ['snowboard', 'basket'],
+          indirizzo: {
+           via: 'piazza roma',
+           cap: '097373',
+           provincia: 'mi',
+           citta: 'Milano' 
+        },
+        saluta: function(){
+          console.log(`ciao sono ${this.genere}`)
+           }
+        }
+persona.colorepreferito = 'blu';
+        persona.saluta();
+    console.log(persona['interessi'][1]);
+    console.log(persona['indirizzo']['cap']);
+    console.log(persona);
+  
+    </script> 
+</body>
+</html>

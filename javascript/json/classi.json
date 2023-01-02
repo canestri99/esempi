@@ -1,0 +1,38 @@
+[
+    
+    {
+    "nome": "1a",
+    "scuola": "scuola elementare milano",
+    "insegnanti": [
+     {
+      "nome":"Anna",
+      "cognome": "blu",
+      "materieInsegnate": ["storia", "italiano", "geografia"]
+     },
+     {
+        "nome":"ludovica",
+      "cognome": "rossi",
+      "materieInsegnate": ["matematica", "ginnastica", "scenze"]
+     }
+    ],
+    "Alunni":[
+        {
+            "nome":"marco",
+            "cognome": "berti"
+        },
+        {
+            "nome":"leonardo",
+            "cognome": "berti"
+        },
+        {
+            "nome":"giuseppe ",
+            "cognome": "berti"
+        }
+    ],
+    "Orari":{
+        "mattina": ["storia", "matematica"],
+        "pomeriggio":["ginnastica", "italiano"]
+    } 
+}
+
+]

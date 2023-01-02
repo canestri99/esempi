@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        chooseToppings(function(toppings) {
+            placeOrder(topping, function (order) {
+                collectOrder(order, function (pizza) {
+                    eatPizza(pizza);
+                }, failureCallback);
+            }, failureCallback);
+        }, failureCallback);
+    </script> -->
+    <!-- ESEMPIO -->
+    <!-- <script>
+        chooseToppings
+        .then(toppings => {
+            return placeOrder(toppings);
+        })
+        .then (order => {
+            return collectOrder(order);
+        })
+        .then(pizza => eatPizza(pizza))
+
+        .catch(failureCallback);
+    </script> -->
+    <script>
+        
+    fetch('person.jpg')
+    .then(response => {
+        if(!response.ok) {
+            throw new Error(`HTTP errori! status : ${response.status}`);   
+        } else{
+            return response.blob();
+        }
+    })    
+    .then(myBlob => {
+        let orbjectURL = URL.createObjectURL(myBlob);
+        let image = document.createElement('img');
+        image.src = objectURL;
+        document.body.appendChild(image);
+    })
+    .catch(e => {
+        console.log('there has been a problem with your fetch operation: ' + e.message);
+    });
+    </script>
+</body>
+</html>

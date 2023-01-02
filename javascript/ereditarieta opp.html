@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <script>
+    function Persona(nome, cognome, eta, genere, interessi){
+        this.nome = nome;
+        this.cognome = cognome;
+        this.eta = eta;
+        this.genere = genere; 
+        this.interessi = interessi;
+       
+       
+        this.saluta = function () {
+            console.log(`ciao sono ${this.nome}`);
+        };
+    };
+
+    function Insegnante(nome, cognome, eta, genere, interessi, materia){
+        Persona.call(this, nome, cognome, eta, genere, interessi);
+
+        this.materia = materia;
+        this.saluta = function () {
+        console.log(`buongiorno sono ${this.nome} ${this.cognome}`);
+        };
+    };
+
+    const insegnante = new Insegnante('anna', 'blu', 67, 'femmina', ['netflix'], 'storia');
+    console.log(insegnante);
+    insegnante.saluta();
+   </script>  -->
+<!--  -->
+   <script>
+class persona{
+    constructor(nome, cognome, eta, genere, interessi) {
+    this.nome = nome;
+    this.cognome = cognome;
+    this.eta = eta;
+    this.genere = genere; 
+    this.interessi = interessi;
+}
+saluta(){
+    console.log(`ciao sono ${this.nome}`);
+  };
+}
+
+class Insegnante extends persona{
+    constructor(nome, cognome, eta, genere, interessi, materia){
+      super(nome, cognome, eta, genere, interessi);
+      
+      this.materia = materia;
+    }
+    get materia() {
+        return this._materia;
+    }
+    set materia(nuovaMateria){
+        this._materia = nuovaMateria;
+    }
+    riprendiAlunno(nomeAlunno){
+        console.log(`${nomeAlunno} non si mangia in classe!`);
+    }
+}
+
+const insegnante = new Insegnante('anna', 'blu', 32, 'femmina', ['netflix'], 'storia');
+insegnante.riprendiAlunno('simone');
+console.log(insegnante.materia);
+insegnante.materia = 'matematica'
+console.log(insegnante.materia);
+   </script>
+</body>
+</html>

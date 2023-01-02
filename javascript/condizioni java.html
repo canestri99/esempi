@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    let nome = 'jack';
+    let numero = 22;
+    let isOnline = true;
+
+ if(nome == 'luca'){
+     console.log('ciao luca');   
+    }else if(nome == 'marco'){
+console.log('ciao marco');
+<!-- se bisogna fare una negazione bisogna scrivere (!(nome == luca)) -->
+    }else{
+        console.log('ciao persona anonima');
+    }
+    if(numero >= 20){
+        console.log ('ok');
+        
+    }else{
+        console.log('non va bene');
+    }
+     if(numero % 2 == 0){
+        console.log('numero pari');
+    }
+    else{ 
+    console.log('numero dispari');    
+    }
+    if (!isOnline) {
+        console.log("non e online")
+    } else {
+        console.log("è online")
+    }
+    switch(nome){
+        case 'luca' :
+        console.log('ciao luca');
+        break;
+        case 'marco':
+        console.log('ciao marco');
+        break;
+        case 'gino':
+        console.log('ciao gino');
+        break;
+        default:
+        console.log('non so il tuo nome');
+    }
+let cognome = (numero < 20) ? "luca" : "leonardo";
+console.log(cognome);
+   </script>   
+</body>
+</html>

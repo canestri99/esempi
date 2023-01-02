@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+p {
+font-family: Arial, Helvetica, sans-serif;
+letter-spacing: 1px;
+text-transform: uppercase;
+text-align: center;
+border: 2px solid rgba(0,0,200,0.6);
+background: rgba(0,0,200,0.3);
+color: rgba(0,0,200,0.6);
+box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+border-radius: 10px;
+padding: 2px 10px;
+display: inline-block;
+cursor: pointer;
+}
+    </style>
+</head>
+<body>
+    <p>Player 1: Chris</p>
+
+    <script>
+       const paragraph = document.querySelector('p');
+       
+       paragraph.addEventListener('click', updateName);
+
+       function updateName() {
+        let name = prompt('Enter a new name');
+        paragraph.textContent = 'Player 1: ' + name;
+       }
+    </script>
+    <script>
+        let nome = ('simone');
+        let testo = 'ciao sono ' + nome;
+        console.log(testo);
+      
+        let classeQuarta = (1 , 2 , 3);
+    console.log(classeQuarta );
+    </script>
+<script>
+    const numero = 44;
+
+    console.log(numero + 3);
+</script>
+
+<script>
+    const risultato = 13 % 3;
+//   andra a creare un risultato rimanente dalla operazione percio o se sara pari e un numero dispari se sara dispari  
+    console.log(risultato);
+</script>
+
+<script>
+ const x = 10;
+
+ console.log(x < 11)   
+</script>
+
+<script>
+    const y = 10;
+
+   console.log(y == 10);
+
+// uguale,invece != e diverso
+</script>
+<!-- <script>
+   let testo = "ciao sono una variabile";
+   let elemento = `<h1>${testo} bellissima</h1>`;
+   
+   document.body.innerHTML = elemento ; 
+</script>  -->
+<script>
+    let stringa = "questo è un corso javascript";
+    let indexCorso = stringa.indexOf('corso');
+
+console.log(stringa.slice(indexCorso));
+</script>
+<script>
+    let citta = 'milano,torino,roma,venezia,napoli';
+    let data = ['milano', 'torino', 'roma', 'venezia', 'napoli', 'firenze'];
+ 
+    for(i=0; i<data.length; i++){
+    console.log(data[i]);
+    }
+</script>
+<script>
+ let luoghi = 'milano,torino,roma,venezia,napoli';
+let date = citta.split(',');
+// pop toglie un elemento indicato push aggiunge
+console.log(date);
+
+</script>
+</body>
+</html>

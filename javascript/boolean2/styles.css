@@ -1,0 +1,62 @@
+/* css reset */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+ background-color: #120945;
+ font-family: livvic, sans-serif;
+ line-height: 1;
+}
+
+h1{
+    font-size: 26px;
+    color: #de7eb6;
+    margin-bottom: 16px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+  width: 350px;
+  margin: 24px auto 0 auto;  
+}
+
+.header{
+    text-align: center;
+}
+.preview{
+    width: 350px;
+    height: 350px;
+    background-color: #3535ec;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.preview > img{
+
+position: absolute;
+top: 0;
+left: 0;
+}
+.button{
+ padding: 8px;
+ border: none;
+ cursor: pointer;
+ }
+ .primary-button{
+    background-color: #de7eb6;
+ }
+
+ .actions{
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .actions > button {
+    width: 48%;
+ }

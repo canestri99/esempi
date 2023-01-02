@@ -1,0 +1,36 @@
+{
+     "nome": "4A", 
+    "numeroAlunni": 23,
+    "scuolaSabato": false,
+    "scuola": "Scuola Elementare Milano",
+    "insegnanti": [
+     {
+      "nome":"Anna",
+      "cognome": "Blu",
+      "materieInsegnate": ["Storia", "Italiano", "Geografia"]
+     },
+     {
+        "nome":"Ludovica",
+      "cognome": "Rossi",
+      "materieInsegnate": ["Matematica", "Ginnastica", "Scenze"]
+     }
+    ],
+    "Alunni":[
+        {
+            "nome":"Marco",
+            "cognome": "Berti"
+        },
+        {
+            "nome":"Leonardo",
+            "cognome": "Neri"
+        },
+        {
+            "nome":"Giuseppe ",
+            "cognome": "Betti"
+        }
+    ],
+    "Orari":{
+        "mattina": ["Storia", "Matematica"],
+        "pomeriggio":["Ginnastica", "Italiano"]
+    } 
+}

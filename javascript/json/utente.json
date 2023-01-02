@@ -1,0 +1,31 @@
+{
+    "id": "555",
+    "nome": "luca",
+    "cognome": "rossi",
+    "codiceFiscale": "dhejfbjdbvbjh",
+    "sposato": false,
+    "indirizzo": {
+        "via" : "via del passero 13",
+        "citta": "milano",
+        "provincia": "mi",
+        "cap": "5464"
+    },
+    "recapiti":{
+        "email": [
+            "frenkdell@gmail.com", 
+            "luca.rossi@gmail.com"
+        ],
+        "telefono": [
+            {
+            "tipo": "ufficio",
+            "numero": "353553636"
+        },
+        {
+          "tipo": "cellulare",
+          "numero":"353553636"  
+        }
+
+      ]
+    }
+
+}
